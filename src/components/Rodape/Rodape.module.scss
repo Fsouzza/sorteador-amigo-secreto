@@ -1,0 +1,32 @@
+.rodape{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 800px){
+    flex-direction: column;
+    img{
+      margin-top: 32px;
+    }
+  }
+  &__botao{
+    background-color: #FE652B;
+    border-radius: 45px;
+    box-shadow: 2px 2px 0px 1px #000000;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 20px;
+    height: 80px;
+    width: 350px;
+    &:disabled{
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+    &:hover{
+      background-color: #4B69FD;
+    }
+    @media screen and (max-width: 800px){
+      margin: 32px 0;
+      width: 220px;
+    }
+  }
+}

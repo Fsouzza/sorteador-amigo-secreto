@@ -1,0 +1,25 @@
+.cabecalho{
+  display: flex;
+	justify-content: space-around;
+	padding-top: 6rem;
+	@media screen and (max-width: 800px){
+		align-items: center;
+		flex-direction: column;
+		padding-top: 2rem;
+	}
+}
+
+.imagemLogo{
+	background-image: url('../../../public/imagens/logo.png');
+	height: 117px;
+	width: 351px;
+	@media screen and (max-width: 800px){
+		background-image: url('../../../public/imagens/logo-pequeno.png');
+		height: 199px;
+    width: 235px;
+	}
+}
+
+.participante{
+	z-index: 1;
+}
